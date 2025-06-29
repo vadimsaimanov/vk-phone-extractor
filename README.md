@@ -1,5 +1,5 @@
 # vk-phone-extractor
-Script for extracting phone numbers from VK profiles
+Script for extracting phone numbers from VK profiles. 
 Этот скрипт позволяет извлекать телефонные номера из профилей ВКонтакте, используя как API VK, так и парсинг HTML-страниц.
 # Особенности
 - Извлечение номеров через официальное API VK (если предоставлен токен)
@@ -9,19 +9,19 @@ Script for extracting phone numbers from VK profiles
 - Сохранение результатов в Excel-файл
 # Требования
 Клонируйте репозиторий:
-git clone https://github.com/vadimsaimanov/vk-phone-extractor.git
-cd vk-phone-extractor
+- git clone https://github.com/vadimsaimanov/vk-phone-extractor.git
+- cd vk-phone-extractor
 Установите необходимые зависимости:
-pip install requests beautifulsoup4 pandas
-Создайте файл profiles.txt и добавьте в него ссылки на профили VK (по одной на строку)
-(Опционально) Добавьте свой токен VK в переменную VK_TOKEN в коде
+- pip install requests beautifulsoup4 pandas
+- Создайте файл profiles.txt и добавьте в него ссылки на профили VK (по одной на строку)
+- (Опционально) Добавьте свой токен VK в переменную VK_TOKEN в коде
 # Использование
-Pапустите скрипт:
-vk_phones.py
-Результаты будут сохранены в файл vk_phones.xlsx
+Запустите скрипт:
+- vk_phones.py
+- Результаты будут сохранены в файл vk_phones.xlsx
 # Конфигурация
 Вы можете настроить скрипт, изменив следующие переменные:
-VK_TOKEN - токен для доступа к API VK (необязательно)
-API_VERSION - версия API VK
-INPUT_FILE - файл с ссылками на профили
-OUTPUT_FILE - файл для сохранения результатов
+- VK_TOKEN - токен для доступа к API VK (необязательно)
+- API_VERSION - версия API VK
+- INPUT_FILE - файл с ссылками на профили
+- OUTPUT_FILE - файл для сохранения результатов
